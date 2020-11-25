@@ -142,6 +142,8 @@ func (t *Tree) Print() {
 	t.RWMutex.RLock()
 	defer t.RWMutex.RUnlock()
 
+	var problemStatement = " - Binary Tree Assignment - "
+	fmt.Println(problemStatement)
 	fmt.Printf("\n ---------- YOUR BINARY TREE LOOKS LIKE --------------\n  %s\n\n", " M-> ROOT-NODE; L-> LEVEL; Ln-> LEFT-NODE; Rn-> RIGHT-NODE")
 	print(t.root, 0, 0, "M")
 	fmt.Println("\n            ---------------------------              ")
